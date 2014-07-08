@@ -1,7 +1,35 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= title
+
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/foundation/css/foundation.min.css')
+
+		script(src='/stylesheets/foundation/js/foundation.min.js')
+		script(src='/javascripts/core.js')
+
+	body
+		nav(class='top-bar' data-topbar)
+			ul(class='title-area')
+				li(class='name')
+					h1
+						a(href='#') Boolean Ninja
+			section(class='top-bar-section')
+				//Right nav section
+				ul(class='right')
+					li(class='active')
+						a(href='#') Right Button Active
+					li(class='has-dropdown')
+						a(href='#') Right Button Dropdown
+						ul(class='dropdown')
+							li
+								a(href='#') Link 1
+							li
+								a(href='#') Link 2
+				ul(class='left')
+					li
+						a(href='#') Left Button
+		block content

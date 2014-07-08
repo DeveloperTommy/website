@@ -1,3 +1,6 @@
 // Configuring angular.js
-var bnWebsite = angular.module('bnWebsite', []);
+var bnweb = angular.module('bnweb', []);
 
+function indexCtrl($scope, $http){
+	
+}
