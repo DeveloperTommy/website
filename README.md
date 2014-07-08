@@ -24,3 +24,5 @@ To run the app, cd into the directory of the project and run the app using node 
 	$ node app
 	# If node app doesn't work try
 	$ node app.js
+
+To view the app, go to localhost:3000
